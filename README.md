@@ -209,6 +209,15 @@ S('jon').capitalize().s; //'Jon'
 S('JP').capitalize().s; //'Jp'
 ```
 
+### - addhttp() ###
+
+Adds http and .com to domain name if needed.
+```javascript
+S('google').addhttp(); // "http://www.google.com"
+S('stringjs.com').capitalize().s; // "http://www.stringjs.com"
+S('http://google').addhttp(); // "http://www.google.com"
+```
+
 
 ### - chompLeft(prefix)
 
@@ -479,6 +488,16 @@ S('HI JP').isUpper() //false
 S('HelLO').isUpper() //true
 ```
 
+### - isEqual() ###
+
+Checks if tow statements are equal . 
+
+```javascript
+S('Hello').isEqual("Hallow") //false
+S('Hello world').isEqual("Hello man")  //false
+S('this is nice').isEqual("this is nice") //true
+
+```
 
 ### - latinise() ###
 
@@ -952,6 +971,23 @@ var a = "Hello " + S('joe!'); //a = "Hello joe!"
 S("Hello").toString() === S("Hello").s; //true
 ```
 
+### - addAfter() ###
+
+Adds value after specified word.
+
+```javascript
+S('Hello that's nice day').addAfter("Hello" , " world"); // "Hello world that's nice day"
+S("you're using string").addAfter("sting" , ".js"); // "you'r using string.js"
+```
+
+### - addBefore() ###
+
+Adds value before specified word.
+
+```javascript
+S('Hello that's nice day').addBefore("that's" , " world "); // "Hello wolrd that's nice day"
+S("see you later").addAfter("later" , " Tom!"); // "see you later Tom!"
+```
 
 ### - trim() ###
 
@@ -1046,6 +1082,16 @@ S('Venkat').wrapHTML('div', {
     "id": "content",
     "class": "left bullet"
 }).s // <div id="content" class="left bullet">Venkat</div>
+```
+
+### - wrap() ###
+
+Wraps a string with given characters.
+
+Example:
+```javascript
+S('Hello friend').wrap("(" , ")" ) //(Hello friend)
+S('bye , see ya').wrap("<" , ">" ) //<bye , see ya >
 ```
 
 ### + VERSION ###
