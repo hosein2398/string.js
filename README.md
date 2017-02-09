@@ -490,7 +490,7 @@ S('HelLO').isUpper() //true
 
 ### - isEqual() ###
 
-Checks if tow statements are equal . 
+Checks if two statements are equal . 
 
 ```javascript
 S('Hello').isEqual("Hallow") //false
@@ -976,8 +976,8 @@ S("Hello").toString() === S("Hello").s; //true
 Adds value after specified word.
 
 ```javascript
-S('Hello that's nice day').addAfter("Hello" , " world"); // "Hello world that's nice day"
-S("you're using string").addAfter("sting" , ".js"); // "you'r using string.js"
+S('Hello that is nice day').addAfter("Hello" , " world"); // "Hello world that is nice day"
+S("you are using string").addAfter("sting" , ".js"); // "you are using string.js"
 ```
 
 ### - addBefore() ###
@@ -985,8 +985,8 @@ S("you're using string").addAfter("sting" , ".js"); // "you'r using string.js"
 Adds value before specified word.
 
 ```javascript
-S('Hello that's nice day').addBefore("that's" , " world "); // "Hello wolrd that's nice day"
-S("see you later").addAfter("later" , " Tom!"); // "see you later Tom!"
+S('Hello that is nice day').addBefore("that's" , " world "); // "Hello wolrd that is nice day"
+S("see you later").addBefore("later" , " Tom!"); // "see you later Tom!"
 ```
 
 ### - trim() ###
