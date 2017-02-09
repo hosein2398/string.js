@@ -985,7 +985,7 @@ S("you are using string").addAfter("sting" , ".js"); // "you are using string.js
 Adds value before specified word.
 
 ```javascript
-S('Hello that is nice day').addBefore("that's" , " world "); // "Hello wolrd that is nice day"
+S('Hello that is nice day').addBefore("that" , " world "); // "Hello wolrd that is nice day"
 S("see you later").addBefore("later" , " Tom!"); // "see you later Tom!"
 ```
 
