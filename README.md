@@ -214,7 +214,7 @@ S('JP').capitalize().s; //'Jp'
 Adds http and .com to domain name if needed.
 ```javascript
 S('google').addhttp(); // "http://www.google.com"
-S('stringjs.com').capitalize().s; // "http://www.stringjs.com"
+S('stringjs.com').addhttp(); // "http://www.stringjs.com"
 S('http://google').addhttp(); // "http://www.google.com"
 ```
 
